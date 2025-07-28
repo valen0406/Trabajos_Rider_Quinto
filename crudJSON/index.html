@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CRUD con JSON y LocalStorage</title>
+    
+</head>
+<body>
+    <h1>Transformación entre Json.stringify() y JSON.parse() + local storage</h1>
+   
+    <h2>1. Obtener información desde web server</h2>
+    <button onclick="obtenerDatos()">Obtener Datos</button>
+    <pre id="outputServer">Datos del servidor aparecerán aquí</pre>
+
+    <h2>2. Operaciones con LocalStorage</h2>
+    <label for="inputJson">Modifica o escribe un objeto JSON:</label>
+    <div>
+        <button onclick="insertarEjemplo()">Insertar Ejemplo</button>
+    </div>
+    <textarea id="inputJson" placeholder='{"nombre": "nuevo nombre"}'></textarea>
+
+    <button onclick="guardarDatos()">Guardar en LocalStorage</button>
+    <button onclick="cargarDatos()">Cargar desde LocalStorage</button>
+    <pre id="outputClient">Datos cargados aparecerán aquí...</pre>
+
+    <script src="script.js"></script>
+</body>
+</html>

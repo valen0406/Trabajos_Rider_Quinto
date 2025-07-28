@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: #fff0f5;
+    /* fondo general lavanda claro */
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    overflow: hidden;
+    border: 1px solid #f3d6e0;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #f3d6e0;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #9b6b84;
+    background: #fdeff4;
+    transition: background 0.3s ease;
+}
+
+.tab.active {
+    background: #f8c8dc;
+    color: #703f5c;
+    border-bottom: 2px solid #f28ab2;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #5e4b51;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f3d6e0;
+    border-radius: 6px;
+    background: #ffe6ef;
+    font-size: 0.95rem;
+    color: #4c3a3e;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #f28ab2;
+    background: #fff0f6;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn+.btn {
+    margin-left: 10px;
+}
+
+.btn.save {
+    background: #f28ab2;
+}
+
+.btn.save:hover {
+    background: #f1709b;
+}
+
+.btn.status {
+    background: #c38eb4;
+}
+
+.btn.status:hover {
+    background: #a7709d;
+}

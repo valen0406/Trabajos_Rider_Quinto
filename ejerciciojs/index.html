@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <label for="" id="idlblNum1">numero1</label>
+    <input type="text" id="idTxtNum1" name="" value="10">
+        <label for="" id="idlblNum2">numero2</label>
+    <input type="text" id="idTxtNum2" name="" value="10">
+       <!-- <label for="" id="idlblNum3">numero3</label>
+    <input type="text" id="idTxtNum3" name="" value="10">
+        <label for="" id="idlblNum4">numero4</label>
+    <input type="text" id="idTxtNum4" name="" value="10">-->
+    </div> <br>
+   <!-- Funciones por valor-->
+    <h3>Seleccione el tipo a usar: </h3>
+    <label for=""> <input type="radio" name="tipoSuma" value="referencia" >Por Referencia </label> <br>
+    <label for=""> <input type="radio" name="tipoSuma" value="valor" >Por Valor </label> <br>
+
+    <input type="button" value="Sumar" onclick="condicional(document.getElementById('idTxtNum1').value,document.getElementById('idTxtNum2').value)">
+    <input type="button" value="Multiplicar" onclick="fnMultiValor(document.getElementById('idTxtNum1').value,document.getElementById('idTxtNum2').value)">
+    <input type="button" value="Dividir" onclick="fnDiviValir(document.getElementById('idTxtNum1').value,document.getElementById('idTxtNum2').value)">
+
+    <hr>
+    <p id="ResultadoSumreferencia"></p>
+    <p id="ResultadoSumaV"></p>
+    <p id="ResultadoCondicional"></p>
+    <p id="ResultadoMultiValor"></p>
+    <p id="ResultadoDiviValor"></p>
+
+
+
+    <!--Funciones por referecnia
+    <input type="button" name="" id="" value="Sumar" onclick="fnSumaReferencia(document.getElementById('idTxtNum1').value,document.getElementById('idTxtNum2').value,document.getElementById('idTxtNum3').value,document.getElementById('idTxtNum4').value)">   --> 
+
+   <!-- <div>
+        <button onclick="ejecutarOperacion('suma')">Sumar</button>
+        <button onclick="ejecutarOperacion('resta')">Restar</button>
+        <button onclick="ejecutarOperacion('multiplicacion')">Multiplicar</button>
+        <button onclick="ejecutarOperacion('division')">Dividir</button>
+    </div>
+     <p id="ResultadoSumreferencia"> </p> -- Parrafo donde se ve el resultado de la suma
+    <p id="ResultadoSumaV"></p>
+
+
+    <label for="rdReferencia" title="Referencia"><input type="radio" name="rdMetodo" id="rdReferencia">Referencia</label>
+    <input type="radio" name="nameRdTipoFn" id="idRdReferencia" class="radios" title="Valor"> -->
+   <script src="index.js"></script>
+</body>
+</html>

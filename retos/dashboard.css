@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background: #fceef1;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.sidebar {
+    background-color: #f8c8dc;
+    color: #fff;
+    width: 220px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    margin-top: 15px;
+}
+
+.menu h1 {
+    margin-bottom: 20px;
+}
+
+.menu li {
+    list-style: none;
+    padding: 10px;
+}
+
+.menu li:hover {
+    background-color: #f4a5c4;
+    cursor: pointer;
+}
+
+section {
+    padding: 15px;
+    margin: 20px;
+    background-color: #fff;
+    border-bottom: #f8c8dc 5px solid;
+
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px 4px 28px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin: 10px;
+    position: relative;
+}
+
+.operacional {
+    background-color: #fbeaf0;
+    color: #d46a92;
+    border: 1px solid #f4c9d9;
+}
+
+.operacional::before {
+    content: "✓";
+    position: absolute;
+    left: 10px;
+    color: #d46a92;
+    font-weight: bold;
+}
+
+.alerta {
+    background-color: #fce6e6;
+    color: #cc4c4c;
+    border: 1px solid #f5bcbc;
+}
+
+.alerta::before {
+    content: "!";
+    position: absolute;
+    left: 10px;
+    color: #cc4c4c;
+    font-weight: bold;
+}
+
+.tareas label {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.tareas input[type="checkbox"] {
+    margin-bottom: 15px;
+    margin-right: 6px;
+    accent-color: #f48fb1;
+    /* checkbox rosado */
+}
+
+.equipo img {
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 100%;
+    width: 50px;
+}
+
+.informacion p,
+ul,
+li {
+    margin-top: 20px;
+}
